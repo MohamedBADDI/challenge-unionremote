@@ -1,14 +1,17 @@
 import React , {Component} from 'react'
 import {Navbar,NavItem,Nav,NavDropdown,MenuItem} from 'react-bootstrap'
-
+import './Header.css'
+import logo from '../img/logo.png'
 class Header extends Component{
     render(){
         return(
+
             <div>
-                <Navbar inverse collapseOnSelect>
+                <Navbar className="bg-color" collapseOnSelect>
                 <Navbar.Header>
-                    <Navbar.Brand>
-                    <a href="#brand">React-Bootstrap</a>
+                    <Navbar.Brand className="logo_position">  
+                    <a href="#brand"><img src={logo} className="logo" alt="Logo"/>
+                    Welcome to the jungle</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
