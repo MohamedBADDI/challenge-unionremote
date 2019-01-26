@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Salam tout le monde
+            Salam tout le monde.
           </a>
         </header>
       </div>
