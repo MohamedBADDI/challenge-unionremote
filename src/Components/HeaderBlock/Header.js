@@ -8,25 +8,22 @@ import logo from '../../img/logo.png'
 class Header extends Component{
     render(){
         return(
-
-            <div>
-                <Navbar fluid className="bg-color">
-                <Navbar.Header>
-                    <Navbar.Brand className="logo_position">  
-                    <a href="#brand"><img src={logo} className="logo" alt="Logo"/>
-                    Welcome to the jungle</a>
-                    </Navbar.Brand>
-                </Navbar.Header>
-                <Nav pullRight className="arrow_group">
-                    <NavItem eventKey={1} href="#" className="arrow_move">
-                    <FontAwesomeIcon icon={faArrowLeft}/>
-                    </NavItem>
-                    <NavItem eventKey={2} href="#"className="arrow_move">
-                      <FontAwesomeIcon icon={faArrowRight} />
-                    </NavItem>
-                    </Nav>
-                </Navbar>
-            </div>
+            <Navbar fluid className="bg-color">
+            <Navbar.Header>
+                <Navbar.Brand className="logo_position">  
+                <a href="#brand"><img src={logo} className="logo" alt="Logo"/>
+                Welcome to the jungle</a>
+                </Navbar.Brand>
+            </Navbar.Header>
+            <Nav pullRight className="arrow_group">
+                <NavItem eventKey={1} href="#" className="arrow_move">
+                <FontAwesomeIcon icon={faArrowLeft}/>
+                </NavItem>
+                <NavItem eventKey={2} href="#"className="arrow_move">
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </NavItem>
+                </Nav>
+            </Navbar>
         )
     }
 }
