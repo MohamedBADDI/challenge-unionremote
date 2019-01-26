@@ -1,0 +1,33 @@
+nav.bg-color {
+    background: #31333b;
+    color: #fff;
+    min-height: 60px;
+}
+img.logo {
+    display: -webkit-inline-box;
+    margin: 0px 5px 0px 5px;
+    width: 50px;
+}
+
+a.logo_position {
+    padding: 4px 0px 0px 0px;
+    color: #fff !important;
+    font-size: 15px;
+}
+ul.arrow_group {
+    margin: 4px 0;
+}
+
+li.arrow_move {
+    margin: 0px 3px;
+    background: #4b4d55;
+    border-radius: 50%;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+}
+
+li.arrow_move > a > svg {
+    color: #f8f8f8;
+    font-size: 15px;
+}
