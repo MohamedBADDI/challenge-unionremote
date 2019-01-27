@@ -13,10 +13,7 @@ class Widget extends Component{
         super(props)
         this.goNext = this.goNext.bind(this)
         this.goPrev = this.goPrev.bind(this)
-        this.swiper = null
-        
-        this.state = item
-        
+        this.swiper = null        
       }
     
       goNext() {
@@ -60,7 +57,7 @@ class Widget extends Component{
             <Grid fluid>
             <Row className="show-grid">
               <Swiper {...params} ref={node => this.swiper = node.swiper }>
-                <Content item={item} />
+                <Content />
               </Swiper>
             </Row>
             </Grid>
