@@ -1,3 +1,11 @@
+This project was started Saturday 26th January.
+
+I worked with BootStrap for css.
+
+I used the library react-swiper-id for the swiper fonctionality.
+
+I used one component to do the widget.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
