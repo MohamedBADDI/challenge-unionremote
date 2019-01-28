@@ -1,12 +1,15 @@
 import React , {Component} from 'react'
-import {Navbar,NavItem,Nav,Grid,Row} from 'react-bootstrap'
+import {Navbar,NavItem,Nav,Grid,Row,Col} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft,faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import Content from '../BodyBlock/Content'
 import Swiper from 'react-id-swiper'
 import './Widget.css'
 import logo from '../../img/logo.png'
+import logofooter from '../../img/logofooter.svg'
+import img_1 from '../../img/img_1.jpg'
 
+
+import ContentData from '../BodyBlock/ContentData'
 
 class Widget extends Component{
     constructor(props) {
@@ -24,7 +27,7 @@ class Widget extends Component{
         if (this.swiper) this.swiper.slidePrev()
       }
 
-    render(){
+    render(props){
         const params = {
             slidesPerView: 4,
             slidesPerColumn: 2,
@@ -36,6 +39,13 @@ class Widget extends Component{
               type:'progressbar'
             }
           }
+
+          
+      const ContentComponent = ContentData.map(contentsingle => <div style={{background:img_1}}>
+        <h3 style={{display: !contentsingle.question && "none"}}>Question: {contentsingle.question}</h3>
+        <h3 style={{color: !contentsingle.punchLine && "#888888"}}>Answer: {contentsingle.punchLine}</h3>
+      </div>)
+      
         return(
           <div>
             <Navbar fluid className="bg-color">
@@ -57,9 +67,19 @@ class Widget extends Component{
             <Grid fluid>
             <Row className="show-grid">
               <Swiper {...params} ref={node => this.swiper = node.swiper }>
-                <Content />
+             {ContentComponent}
               </Swiper>
             </Row>
+            </Grid>
+            <Grid fluid className="no-pad footer">
+            <Col sm={12} className="no-pad" md={3}>
+              <img id="size_logo" src={logofooter} alt=""/>
+            </Col>
+            <Col sm={12} md={3} className="no-pad" xsOffset={6}>
+              <a href="#" className="button_footer">
+                Voir le profil
+              </a>
+            </Col>
             </Grid>
             </div>
         )

@@ -34,3 +34,33 @@ li.arrow_move > a > svg {
     color: #f8f8f8;
     font-size: 15px;
 }
+.swiper-container-horizontal>.swiper-pagination-progressbar, .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    bottom: 0;
+    top: auto;
+}
+span.swiper-pagination-progressbar-fill {
+    background: #00c29a !important;
+}
+.footer.container-fluid {
+    background: #31333b;
+}
+img#size_logo {
+    width: 50px;
+    margin: 10px;
+}
+.no-pad{
+    padding: 0;
+}
+a.button_footer {
+    display: block;
+    padding: 20px;
+    text-align: right;
+    color: #fff;
+    font-size: 17px;
+}
+
+a.button_footer::after {
+    content: '>';
+    font-family: monospace;
+    margin: 0px 0px 0px 5px;
+}
