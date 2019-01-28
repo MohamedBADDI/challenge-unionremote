@@ -48,6 +48,7 @@ class Widget extends Component{
       
         return(
           <div>
+            {/* Nav */}
             <Navbar fluid className="bg-color">
             <Navbar.Header>
                 <Navbar.Brand className="logo_position">  
@@ -64,6 +65,7 @@ class Widget extends Component{
                 </NavItem>
                 </Nav>
             </Navbar>
+            {/* swiper */}
             <Grid fluid>
             <Row className="show-grid">
               <Swiper {...params} ref={node => this.swiper = node.swiper }>
@@ -71,6 +73,7 @@ class Widget extends Component{
               </Swiper>
             </Row>
             </Grid>
+            {/* footer */}
             <Grid fluid className="no-pad footer">
             <Col sm={12} className="no-pad" md={3}>
               <img id="size_logo" src={logofooter} alt=""/>
